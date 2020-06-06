@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block main %}
+{% endblock %}
+
+{% block extrajs %}
+<script  src="{% static 'js/app.js' %}"></script>
+
+<table  class="table table-bordered"  id="myTable">
+<thead>
+<th>
+IP Address
+</th>
+<th>
+Mac Address
+</th>
+<th>
+Hostname
+</th>
+<th>
+SAP ID
+</th>
+<th>
+Actions
+</th>
+</thead>
+<tbody>
+</tbody>
+</table>
+
+<div  id="roomform">
+    <a class="btn btn-primary" href="{% url 'ipaddress_create'%}">Create IPAddress</a>
+
+    <!-- <button  id="createAddress"  class="btn" action="{% url 'ipaddress_create' %}"> Create IPAddress </button> -->
+</div>
+
+{% endblock %}
